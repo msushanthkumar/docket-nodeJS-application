@@ -1,0 +1,25 @@
+<html>
+    <head>
+      <title> Docket Application</title>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+        <link href="/styles.css" rel = "stylesheet" type ="text/css" />
+        <script src="/todo-list.js"></script>
+    </head>
+
+    <body>
+      <div id="dockettable">
+        <form>
+          <input type ="text" name = "item" placeholder="Please enter DATA you want!" required/>
+          <button type ="submit"> Append your Data</button>
+        </form>
+
+        <ul>
+          <% for(var i=0; i< lister.length; i++){ %>
+
+            <li><%=lister[i].item%></li>
+          <%}%>
+
+      </div>
+
+    </body>
+  </html>
